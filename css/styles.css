@@ -210,7 +210,6 @@ img {
   gap: 8px;
   margin-bottom: 30px;
   cursor: pointer;
-
 }
 
 .reqister-checkbox:hover + .reqister-check .reqister-form-uncheck,
@@ -220,6 +219,11 @@ img {
 .reqister-checkbox:checked + .reqister-check .reqister-form-check {
   opacity: 1;
 }
+
+.reqister-checkbox:checked + .reqister-check .reqister-form-uncheck {
+  opacity: 0;
+}
+
 .checkbox-text {
   user-select: none;
 }
@@ -234,7 +238,6 @@ img {
 .reqister-form-uncheck {
   transition: fill var(--transition);
 }
-
 
 /* Modal window */
 /* footer */
